@@ -7,7 +7,7 @@ This project allows you to map a DualShock 4 (Playstation 4) controller to keybo
 
 
 ## Configuration
-To specify how the layout should be setup, go to the *config.txt* file. Here, just type in the desired keyboard input for the appropriate DSL4 buttons. Save the file, and restart the program if necessary.
+To specify how the layout should be setup, go to the *key_map.config* file. Here, just type in the desired keyboard input for the appropriate DSL4 buttons. Save the file, and restart the program if necessary.
 
 
 ## Usage
