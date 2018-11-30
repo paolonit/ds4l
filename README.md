@@ -4,6 +4,11 @@ This project allows you to map a DualShock 4 (Playstation 4) controller to keybo
 
 
 ## Install
+In order to use this project, you must install [libxdo-dev] (https://www.semicomplete.com/projects/xdotool/). Xdo is a tool used for simulating keyboard input and is used for generating output from controller button presses. It can be installed using the following command:
+```
+apt-get install libxdo-dev
+```
+To make the project run `make` and then to run the module and driver run `make init`
 
 
 ## Configuration
