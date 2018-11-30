@@ -1,5 +1,5 @@
 # DualShock 4 Linux
-### By Andrew Myers, Tom Paoloni, and Quinlan Deval
+##### By Andrew Myers, Tom Paoloni, and Quinlan Deval
 This project allows you to map a DualShock 4 (Playstation 4) controller to keyboard input over USB. This can be used to play games, or even perform normal computer tasks with a controller rather than the standard keyboard. By configuring the layout of keys, you can specify how to make the controller fit your needs best.
 
 
