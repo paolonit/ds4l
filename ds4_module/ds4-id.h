@@ -1,0 +1,2 @@
+#define USB_VENDOR_ID_SONY	0x054c
+#define USB_DEVICE_ID_SONY_DS4	0x05c4
