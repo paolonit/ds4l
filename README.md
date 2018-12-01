@@ -10,7 +10,7 @@ In order to use this project, you must install [libxdo-dev](https://www.semicomp
 ```
 apt-get install libxdo-dev
 ```
-To make the project, run `make` and then to load the module and run the driver, run `make init`, both from the project's root folder.
+To make the project, run `make` and then to load the module and run the driver, run `make init`, both from the project's root folder. Be sure to run `make init` as super user, or else it will fail.
 
 
 ## Configuration
