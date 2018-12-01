@@ -29,58 +29,68 @@ int generate_mapping() {
 	return(0);
 }
 
+void send_key(xdo_t * x, char key[10]) {
+	if(strcmp("mouse_l", key)) {
+	
+	} else if (strcmp("mouse_r", key)) {
+
+	} else {
+		xdo_send_keysequence_window(x, CURRENTWINDOW, key, 0);
+	}
+}
+
 void press_key(int face_buttons, int misc_buttons, xdo_t * x) {
 	switch (face_buttons) {
 		case UP_BTN: 
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[0], 0);
+			send_key(x, mapping[0]);
 			break;
 		case RIGHT_BTN: 
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[1], 0);
+			send_key(x, mapping[1]);
 			break;
 		case DOWN_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[2], 0);
+			send_key(x, mapping[2]);
 			break;
 		case LEFT_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[3], 0);
+			send_key(x, mapping[3]);
 			break;
 		case SQUARE_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[4], 0);
+			send_key(x, mapping[4]);
 			break;
 		case X_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[5], 0);
+			send_key(x, mapping[5]);
 			break;
 		case CIRCLE_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[6], 0);
+			send_key(x, mapping[6]);
 			break;
 		case TRIANGLE_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[7], 0);
+			send_key(x, mapping[7]);
 			break;
 	}
 
 	switch (misc_buttons) {
 		case L1_BTN: 
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[8], 0);
+			send_key(x, mapping[8]);
 			break;
 		case R1_BTN: 
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[9], 0);
+			send_key(x, mapping[9]);
 			break;
 		case L2_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[10], 0);
+			send_key(x, mapping[10]);
 			break;
 		case R2_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[11], 0);
+			send_key(x, mapping[11]);
 			break;
 		case SHARE_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[12], 0);
+			send_key(x, mapping[12]);
 			break;
 		case OPTIONS_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[13], 0);
+			send_key(x, mapping[13]);
 			break;
 		case L3_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[14], 0);
+			send_key(x, mapping[14]);
 			break;
 		case R3_BTN:
-			xdo_send_keysequence_window(x, CURRENTWINDOW, mapping[15], 0);
+			send_key(x, mapping[15]);
 			break;
 	}
 	
