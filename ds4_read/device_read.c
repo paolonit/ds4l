@@ -99,7 +99,7 @@ int main (void) {
 		read(fd, &buf, 7);
 		if(buf[5] != 8 || buf[6] != 0) {
 			press_key(buf[5], buf[6], x);
-			printf("\t");
+			//printf("\t");
 			/*for(int i = 5; i < 7; i++) {
 				for (int j = 0; j < 8; j++) {
 					printf("%d", !!((buf[i] << j) & 0x80));
@@ -112,7 +112,7 @@ int main (void) {
 				close(fd);
 			}
 			
-			printf("\n");
+			//printf("\n");
 			
 		}
 		

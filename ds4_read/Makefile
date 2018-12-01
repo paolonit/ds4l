@@ -8,6 +8,4 @@ clean:
 	rm main
 start: main
 	./main
-exit:
-	pkill event_gen
-	pkill device_read
+	
