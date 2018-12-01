@@ -12,6 +12,8 @@ apt-get install libxdo-dev
 ```
 To make the project, run `make` and then to load the module and run the driver, run `make init`, both from the project's root folder. Be sure that the controller is plugged in and that you are a super user before running `make init`.
 
+Finally, run `sh make_node.sh` as super user. This makes a device node that can be listened to for controller input.
+
 To exit and unload the driver, run `make exit` as super user
 
 ## Configuration
