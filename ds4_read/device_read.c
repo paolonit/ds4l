@@ -30,10 +30,12 @@ int generate_mapping() {
 }
 
 void send_key(xdo_t * x, char key[10]) {
-	if(strcmp("mouse_l", key)) {
-	
-	} else if (strcmp("mouse_r", key)) {
-
+	if(strcmp("mouse_l", key) == 0) {
+		xdo_mouse_down(x, CURRENTWINDOW, 1);
+		xdo_mouse_up(x, CURRENTWINDOW, 1);
+	} else if (strcmp("mouse_r", key) == 0) {
+		xdo_mouse_down(x, CURRENTWINDOW, 3);
+		xdo_mouse_up(x, CURRENTWINDOW, 3);
 	} else {
 		xdo_send_keysequence_window(x, CURRENTWINDOW, key, 0);
 	}
